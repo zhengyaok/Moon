@@ -5,17 +5,73 @@
         <link>http://example.com</link>
         <description></description>
         <language>en</language>
-        <pubDate>Fri, 30 Jun 2023 14:53:09 +0800</pubDate>
-        <lastBuildDate>Fri, 30 Jun 2023 14:53:09 +0800</lastBuildDate>
+        <pubDate>Mon, 03 Jul 2023 11:23:03 +0800</pubDate>
+        <lastBuildDate>Mon, 03 Jul 2023 11:23:03 +0800</lastBuildDate>
         <item>
-            <guid isPermalink="true">http://example.com/2023/06/30/hello-world/</guid>
-            <title>Hello World</title>
-            <link>http://example.com/2023/06/30/hello-world/</link>
-            <pubDate>Fri, 30 Jun 2023 14:53:09 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;p&gt;匡正耀 TEST&lt;/p&gt;
+            <guid isPermalink="true">http://example.com/2023/07/03/%E3%80%90ChatGPT%E3%80%91%E5%9F%BA%E4%BA%8EDocker%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84ChatGPT/</guid>
+            <title>【chatGPT】基于Docker如何快速部署自己的ChatGPT</title>
+            <link>http://example.com/2023/07/03/%E3%80%90ChatGPT%E3%80%91%E5%9F%BA%E4%BA%8EDocker%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84ChatGPT/</link>
+            <pubDate>Mon, 03 Jul 2023 11:23:03 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;基于docker如何快速部署自己的chatgpt&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于docker如何快速部署自己的chatgpt&#34;&gt;#&lt;/a&gt; 基于 Docker 如何快速部署自己的 ChatGPT&lt;/h1&gt;
+&lt;h2 id=&#34;背景&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#背景&#34;&gt;#&lt;/a&gt; 背景&lt;/h2&gt;
+&lt;p&gt;随着&lt;a href=&#34;https://so.csdn.net/so/search?q=OpenAI&amp;amp;spm=1001.2101.3001.7020&#34;&gt; OpenAI&lt;/a&gt; 在 2022 年底发布的 LLM 模型 - ChatGPT 展现出的强大效果，ChatGPT 无疑成为了当下炙手可热的明星模型。&lt;/p&gt;
+&lt;p&gt;现有的基于&lt;a href=&#34;https://so.csdn.net/so/search?q=GPT&amp;amp;spm=1001.2101.3001.7020&#34;&gt; GPT&lt;/a&gt; 的开源项目已经非常多，本文以现有的高热度 github 开源项目&lt;a href=&#34;https://github.com/Chanzhaoyu/chatgpt-web&#34;&gt; chatgpt-web&lt;/a&gt; 为例，教大家简单快速地搭建属于自己的 ChatGPT。&lt;/p&gt;
+&lt;h2 id=&#34;chatgpt-web&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#chatgpt-web&#34;&gt;#&lt;/a&gt; ChatGPT-Web&lt;/h2&gt;
+&lt;p&gt;chatgpt-web 项目中的部署教程已经非常完整，本文不再过多解释。&lt;/p&gt;
+&lt;p&gt;仅以 Docker 部署为例&lt;/p&gt;
+&lt;p&gt;前置条件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本地或者服务器应该具有 Docker 环境&lt;/li&gt;
+&lt;li&gt;具有 ChatGPT 帐号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以 token 模式为例，请求 chatgpt web 版本，免费但稍微具有延迟&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step1. 找到你帐号的 token&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;点击&lt;a href=&#34;https://chat.openai.com/api/auth/session%EF%BC%8C%E8%8E%B7%E5%8F%96%E4%BD%A0%E5%B8%90%E5%8F%B7%E7%9A%84token%EF%BC%8C%E5%B9%B6%E8%AE%B0%E5%BD%95%E4%BB%96&#34;&gt; https://chat.openai.com/api/auth/session，获取你帐号的 token，并记录他&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step2. 运行 docker&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;按需配置访问 Web 页面的密码，Token、超时等信息&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker run --name chatgpt-web -d -p 127.0.0.1:3888:3002 --&lt;span class=&#34;built_in&#34;&gt;env&lt;/span&gt; OPENAI_ACCESS_TOKEN=your_access_token --&lt;span class=&#34;built_in&#34;&gt;env&lt;/span&gt; AUTH_SECRET_KEY=you_secret_key chenzhaoyu94/chatgpt-web&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Step3. 访问 localhost:3002 查看效果&lt;/strong&gt;&lt;br&gt;
+&lt;img src=&#34;https://brath4.oss-cn-shenzhen.aliyuncs.com/picgo/b6ea40d61cb741129cc1d98af9633d18.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;br&gt;
+在上述步骤中我们无需进行任何代理，就可以直接与 GPT 交流，使用 API 方式同理。当然了，根据项目作者的介绍，&lt;strong&gt;使用 API 时需要进行代理自建&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;如果你只是在本地部署给自己使用，那么以上 3 步就满足了需求，如果想要在公网访问，或者像 App 一样访问你的 ChatGPT，那么请接着往下看。&lt;/p&gt;
+&lt;h2 id=&#34;nginx反向代理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nginx反向代理&#34;&gt;#&lt;/a&gt; Nginx 反向代理&lt;/h2&gt;
+&lt;p&gt;以宝塔面板为例，我们在服务器上拉起 docker 镜像后，可以通过 &lt;code&gt;ip:port&lt;/code&gt;  进行访问&lt;/p&gt;
+&lt;p&gt;但通常来说我们的网站带有域名，以笔者所使用的腾讯云服务器为例&lt;/p&gt;
+&lt;p&gt;前置条件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拥有一个域名&lt;/li&gt;
+&lt;li&gt;拥有一台云服务器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Step1. SSL 证书&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先在云产品中找到 SSL 证书，点击我的证书 - 免费证书 - 申请免费证书&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brath4.oss-cn-shenzhen.aliyuncs.com/picgo/34d88a1248ea4158ba5e2e6a07ab0a67.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;填写申请的域名，申请成功之后，点击下载，下载 nginx 格式的即可&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step2. 配置域名 SSL&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在宝塔面板中选择 - 网站 - 添加站点&lt;/p&gt;
+&lt;p&gt;填写刚刚申请 SSL 证书的域名，选择纯静态，其余默认，点击确定即可&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brath4.oss-cn-shenzhen.aliyuncs.com/picgo/9ece432796a34885adc258df4bc25555.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step3. 配置证书&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;点击添加好的网站，然后点击 SSL，填入刚刚下载的文件中的 &lt;code&gt;key&lt;/code&gt;  和 &lt;code&gt;pem&lt;/code&gt; &lt;br&gt;
+&lt;img src=&#34;https://brath4.oss-cn-shenzhen.aliyuncs.com/picgo/852f85f818444491bc4b8e04248b9a4b.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;配置完成后点击保存&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step4. 配置 DNS 解析&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在云产品中搜索 - 云解析 - 选择 DNS 解析 DNSPod&lt;/p&gt;
+&lt;p&gt;点击我的域名 - 添加记录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brath4.oss-cn-shenzhen.aliyuncs.com/picgo/383f44e9fe714847ab5c5f2079d81982.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;填入刚刚申请的域名，如果带有前缀，则第一个红框填入你的域名前缀，&lt;a href=&#34;http://xn--www-eo8er22f.baidu.com&#34;&gt;比如 www.baidu.com&lt;/a&gt;，则这里填 www&lt;/p&gt;
+&lt;p&gt;第二个红框填写你的服务器 ip，或者你的 CDN 域名&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://brath4.oss-cn-shenzhen.aliyuncs.com/picgo/2882e7602c324fc4a9a5520262c23a0a.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step5. 配置反向代理&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在宝塔面板中，点击刚刚添加的网站，点击反向代理，填入刚刚 docker 启动时的宿主机端口&lt;br&gt;
+&lt;img src=&#34;https://brath4.oss-cn-shenzhen.aliyuncs.com/picgo/abbf944aab284d368e63d28b61024d7f.png&#34; alt=&#34;在这里插入图片描述&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如上文中的 3888&lt;/p&gt;
+&lt;p&gt;以上配置完成之后，访问&lt;a href=&#34;https://%E4%BD%A0%E7%9A%84%E5%9F%9F%E5%90%8D%E5%B0%B1%E5%8F%AF%E4%BB%A5%E4%BA%86~&#34;&gt; https:// 你的域名就可以了～&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pwa支持&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pwa支持&#34;&gt;#&lt;/a&gt; PWA 支持&lt;/h2&gt;
+&lt;p&gt;PWA 技术可以让我们访问网站能够拥有访问 App 一般的体验，在 chatgpt-web 中已经内嵌，但默认是关闭的&lt;/p&gt;
+&lt;p&gt;我们可以通过设置启动时的参数 &lt;code&gt;-env VITE_GLOB_APP_PWA=true&lt;/code&gt;  将他打开&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker run --name chatgpt-web -d -p 127.0.0.1:3888:3002 --&lt;span class=&#34;built_in&#34;&gt;env&lt;/span&gt; OPENAI_ACCESS_TOKEN=your_access_token --&lt;span class=&#34;built_in&#34;&gt;env&lt;/span&gt; AUTH_SECRET_KEY=you_secret_key --&lt;span class=&#34;built_in&#34;&gt;env&lt;/span&gt; VITE_GLOB_APP_PWA=&lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; chenzhaoyu94/chatgpt-web&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;部署成功之后，我们再到手机上访问该网站时便可以保存他在桌面了。&lt;/p&gt;
+&lt;p&gt;默认的 PWA 图标和全局用户信息配置在项目中，即使在网页可以修改当前登陆者的用户信息，在清除 Cookie 之后便会还原，如果你想定制这两种信息，请拉下 chatgpt-web 项目进行镜像自定义&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
