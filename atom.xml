@@ -5,9 +5,9 @@
     <link href="http://example.com" />
     <updated>2023-07-05T03:23:20.000Z</updated>
     <entry>
-        <id>http://example.com/2023/07/05/%E3%80%90HEXO%E3%80%91%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</id>
+        <id>http://example.com/2023/07/05/%E3%80%90Hexo%E3%80%91%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</id>
         <title>【Hexo】使用Hexo搭建属于自己的博客</title>
-        <link rel="alternate" href="http://example.com/2023/07/05/%E3%80%90HEXO%E3%80%91%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+        <link rel="alternate" href="http://example.com/2023/07/05/%E3%80%90Hexo%E3%80%91%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
         <content type="html">&lt;h1 id=&#34;hexo使用hexo搭建属于自己的博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo使用hexo搭建属于自己的博客&#34;&gt;#&lt;/a&gt; 【HEXO】使用 Hexo 搭建属于自己的博客&lt;/h1&gt;
 &lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://brath.top/2021/12/09/%E3%80%90HEXO%E3%80%91%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/#hexo%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2&#34;&gt;#&lt;/a&gt; 【HEXO】使用 Hexo 搭建属于自己的博客&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;/p&gt;
@@ -86,10 +86,10 @@
         <updated>2023-07-05T03:23:20.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2023/07/05/Hexo%E6%90%AD%E5%BB%BA/</id>
-        <title>Hexo搭建</title>
-        <link rel="alternate" href="http://example.com/2023/07/05/Hexo%E6%90%AD%E5%BB%BA/"/>
-        <content type="html">&lt;h1 id=&#34;hexo搭建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo搭建&#34;&gt;#&lt;/a&gt; Hexo 搭建&lt;/h1&gt;
+        <id>http://example.com/2023/07/05/%E3%80%90Hexo%E3%80%91Hexo%E6%90%AD%E5%BB%BA/</id>
+        <title>【Hexo】Hexo搭建</title>
+        <link rel="alternate" href="http://example.com/2023/07/05/%E3%80%90Hexo%E3%80%91Hexo%E6%90%AD%E5%BB%BA/"/>
+        <content type="html">&lt;h1 id=&#34;hexohexo搭建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexohexo搭建&#34;&gt;#&lt;/a&gt; 【Hexo】Hexo 搭建&lt;/h1&gt;
 &lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://brath.top/2021/09/04/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E3%80%91Hexo/#hexo%E6%A1%86%E6%9E%B6%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&#34;&gt;#&lt;/a&gt; hexo 框架个人博客搭建&lt;/h1&gt;
 &lt;h2 id=&#34;-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://brath.top/2021/09/04/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E3%80%91Hexo/#1-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87&#34;&gt;#&lt;/a&gt; 1 环境准备&lt;/h2&gt;
 &lt;h3 id=&#34;-3&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#-3&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://brath.top/2021/09/04/%E3%80%90%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E3%80%91Hexo/#11-nodejs%E5%92%8Cnpm%E5%AE%89%E8%A3%85&#34;&gt;#&lt;/a&gt; 1.1 Node.js 和 npm 安装&lt;/h3&gt;
