@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>BeiBei-Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="BeiBei-Blog"><meta name="msapplication-TileImage" content="https://moon-sea.oss-cn-shanghai.aliyuncs.com/blog_images/head.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="BeiBei-Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="# 项目总结 # 1、项目功能模块和核心业务流程 # 1.1、管理端 # 1.1.1、系统管理： # （1）用户管理、角色管理、菜单管理 # （2）表之间关系 角色表、用户表、菜单表 用户和角色是多对多关系 角色和菜单是多对多关系 # 1.1.2、审批模块 # （1）审批类型管理 # （2）审批模板管理 # （3）审批列表 # 1.1.3、公众号菜单管理 # 1.2、员工端 # 1.2.1、微信授"><meta property="og:type" content="blog"><meta property="og:title" content="BeiBei-Blog"><meta property="og:url" content="http://example.com/2023/07/06/12.%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"><meta property="og:site_name" content="BeiBei-Blog"><meta property="og:description" content="# 项目总结 # 1、项目功能模块和核心业务流程 # 1.1、管理端 # 1.1.1、系统管理： # （1）用户管理、角色管理、菜单管理 # （2）表之间关系 角色表、用户表、菜单表 用户和角色是多对多关系 角色和菜单是多对多关系 # 1.1.2、审批模块 # （1）审批类型管理 # （2）审批模板管理 # （3）审批列表 # 1.1.3、公众号菜单管理 # 1.2、员工端 # 1.2.1、微信授"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:published_time" content="2023-07-06T08:39:47.638Z"><meta property="article:modified_time" content="2023-02-17T15:18:54.640Z"><meta property="article:author" content="John Doe"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://example.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/07/06/12.%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"},"headline":"BeiBei-Blog","image":["http://example.com/img/og_image.png"],"datePublished":"2023-07-06T08:39:47.638Z","dateModified":"2023-02-17T15:18:54.640Z","author":{"@type":"Person","name":"John Doe"},"publisher":{"@type":"Organization","name":"BeiBei-Blog","logo":{"@type":"ImageObject","url":"https://moon-sea.oss-cn-shanghai.aliyuncs.com/blog_images/head.png"}},"description":"# 项目总结 # 1、项目功能模块和核心业务流程 # 1.1、管理端 # 1.1.1、系统管理： # （1）用户管理、角色管理、菜单管理 # （2）表之间关系 角色表、用户表、菜单表 用户和角色是多对多关系 角色和菜单是多对多关系 # 1.1.2、审批模块 # （1）审批类型管理 # （2）审批模板管理 # （3）审批列表 # 1.1.3、公众号菜单管理 # 1.2、员工端 # 1.2.1、微信授"}</script><link rel="canonical" href="http://example.com/2023/07/06/12.%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"><link rel="icon" href="https://moon-sea.oss-cn-shanghai.aliyuncs.com/blog_images/head.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="https://moon-sea.oss-cn-shanghai.aliyuncs.com/blog_images/head.png" alt="BeiBei-Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">文章列表</a><a class="navbar-item" href="/tags">标签</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/zhengyaok"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-07-06T08:39:47.638Z" title="2023/7/6 下午4:39:47">2023-07-06</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-02-17T15:18:54.640Z" title="2023/2/17 下午11:18:54">2023-02-17</time></span><span class="level-item">4 minutes read (About 639 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><div class="content"><h2 id="项目总结"><a class="markdownIt-Anchor" href="#项目总结">#</a> 项目总结</h2>
+<h2 id="1-项目功能模块和核心业务流程"><a class="markdownIt-Anchor" href="#1-项目功能模块和核心业务流程">#</a> 1、项目功能模块和核心业务流程</h2>
+<h3 id="11-管理端"><a class="markdownIt-Anchor" href="#11-管理端">#</a> 1.1、管理端</h3>
+<h4 id="111-系统管理"><a class="markdownIt-Anchor" href="#111-系统管理">#</a> 1.1.1、系统管理：</h4>
+<h5 id="1用户管理-角色管理-菜单管理"><a class="markdownIt-Anchor" href="#1用户管理-角色管理-菜单管理">#</a> （1）用户管理、角色管理、菜单管理</h5>
+<h5 id="2表之间关系"><a class="markdownIt-Anchor" href="#2表之间关系">#</a> （2）表之间关系</h5>
+<p><strong>角色表、用户表、菜单表</strong></p>
+<p><strong>用户和角色是多对多关系</strong></p>
+<p><strong>角色和菜单是多对多关系</strong></p>
+<h4 id="112-审批模块"><a class="markdownIt-Anchor" href="#112-审批模块">#</a> 1.1.2、审批模块</h4>
+<h5 id="1审批类型管理"><a class="markdownIt-Anchor" href="#1审批类型管理">#</a> （1）审批类型管理</h5>
+<h5 id="2审批模板管理"><a class="markdownIt-Anchor" href="#2审批模板管理">#</a> （2）审批模板管理</h5>
+<h5 id="3审批列表"><a class="markdownIt-Anchor" href="#3审批列表">#</a> （3）审批列表</h5>
+<h4 id="113-公众号菜单管理"><a class="markdownIt-Anchor" href="#113-公众号菜单管理">#</a> 1.1.3、公众号菜单管理</h4>
+<h3 id="12-员工端"><a class="markdownIt-Anchor" href="#12-员工端">#</a> 1.2、员工端</h3>
+<h4 id="121-微信授权登录"><a class="markdownIt-Anchor" href="#121-微信授权登录">#</a> 1.2.1、微信授权登录</h4>
+<h5 id="1通过手机号和微信openid进行用户关联"><a class="markdownIt-Anchor" href="#1通过手机号和微信openid进行用户关联">#</a> （1）通过手机号和微信 openid 进行用户关联</h5>
+<h4 id="122-显示所有审批类型和模板"><a class="markdownIt-Anchor" href="#122-显示所有审批类型和模板">#</a> 1.2.2、显示所有审批类型和模板</h4>
+<h4 id="123-发起申请"><a class="markdownIt-Anchor" href="#123-发起申请">#</a> 1.2.3、发起申请</h4>
+<h4 id="124-消息推送"><a class="markdownIt-Anchor" href="#124-消息推送">#</a> 1.2.4、消息推送</h4>
+<h4 id="125-待处理和已处理"><a class="markdownIt-Anchor" href="#125-待处理和已处理">#</a> 1.2.5、待处理和已处理</h4>
+<h4 id="126-查询审批详情和审批操作"><a class="markdownIt-Anchor" href="#126-查询审批详情和审批操作">#</a> 1.2.6、查询审批详情和审批操作</h4>
+<h2 id="2-项目技术"><a class="markdownIt-Anchor" href="#2-项目技术">#</a> 2、项目技术</h2>
+<table>
+<thead>
+<tr>
+<th>基础框架：SpringBoot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据缓存：Redis</td>
+</tr>
+<tr>
+<td>数据库：MyBatisPlus + MySQL</td>
+</tr>
+<tr>
+<td>权限控制：SpringSecurity</td>
+</tr>
+<tr>
+<td>工作流引擎：Activiti7</td>
+</tr>
+<tr>
+<td>前端技术：vue-admin-template + Node.js + Npm + Vue + ElementUI + Axios</td>
+</tr>
+<tr>
+<td>微信公众号：公众号菜单 + 微信授权登录 + 消息推送</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-项目问题和解决方式"><a class="markdownIt-Anchor" href="#3-项目问题和解决方式">#</a> 3、项目问题和解决方式</h2>
+<h3 id="31-跨域问题"><a class="markdownIt-Anchor" href="#31-跨域问题">#</a> 3.1、跨域问题</h3>
+<p><strong>访问协议</strong>： http   https</p>
+<p><strong>ip 地址（域名）</strong>： <a target="_blank" rel="noopener" href="http://oa.atguigu.com">oa.atguigu.com</a>    <a target="_blank" rel="noopener" href="http://oa.baidu.com">oa.baidu.com</a></p>
+<p><strong>端口号</strong>：8800  9528</p>
+<p><strong>多种解决方式：</strong></p>
+<p>（1）在 controller 类上面添加注解</p>
+<p>（2）在前端进行配置</p>
+<h3 id="32-mapper扫描问题"><a class="markdownIt-Anchor" href="#32-mapper扫描问题">#</a> 3.2、mapper 扫描问题</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第一种方式 ：创建配置类，使用@MapperScan注解</span></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@MapperScan(basePackages = &#123;&quot;com.atguigu.auth.mapper&quot;,&quot;com.atguigu.process.mapper&quot;,&quot;com.atguigu.wechat.mapper&quot;&#125;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MybatisPlusConfig</span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//第二种方式：在mapper的接口上面添加注解 @Mapper</span></span><br><span class="line"><span class="meta">@Mapper</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">SysMenuMapper</span> <span class="keyword">extends</span> <span class="title class_">BaseMapper</span>&lt;SysMenu&gt; &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="33-xml文件加载问题"><a class="markdownIt-Anchor" href="#33-xml文件加载问题">#</a> 3.3、xml 文件加载问题</h3>
+<p><strong>Maven 默认情况下，在 src - main -java 目录下面，只会加载 java 类型文件，其他类型文件不会加载的</strong></p>
+<p><strong>第一种解决方式：把 xml 文件放到 resources 目录下</strong></p>
+<p><strong>第二种解决方式：在 pom.xml 和项目配置文件进行配置</strong></p>
+<h3 id="34-流程定义部署zip文件"><a class="markdownIt-Anchor" href="#34-流程定义部署zip文件">#</a> 3.4、流程定义部署 zip 文件</h3>
+<p><strong>zip 文件规范（要求）</strong></p>
+<p><strong>（1）zip 文件名称和流程 key 保持一致</strong></p>
+<p>例如：<process id="qingjia" isExecutable="true"> 文件名称 qingjia.zip</p>
+<p><strong>（2）在 zip 文件打包 xml 文件，xml 文件命名 .bpmn20.xml</strong></p>
+<p>例如：jiaban.bpmn20.xml</p>
+<h3 id="35-内网穿透问题"><a class="markdownIt-Anchor" href="#35-内网穿透问题">#</a> 3.5、内网穿透问题</h3>
+<p><strong>接口和页面在本地 localhost，公众号不能直接访问本地路径的，需要使用内网穿透</strong></p>
+<p>有两个用途：</p>
+<p><strong>第一个：公众号页面通过内网穿透到本地页面  9090</strong></p>
+<p><strong>第二个：公众号里面接口通过内网穿透到本地接口 8800</strong></p>
+<h4 id="36-其他问题"><a class="markdownIt-Anchor" href="#36-其他问题">#</a> 3.6、其他问题</h4>
+</div><div class="sharethis-inline-share-buttons"></div><script src="https://brath.cn" defer></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2023/07/06/1.%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83/"><i class="level-item fas fa-chevron-left"></i><span class="level-item"> </span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/07/06/11.%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/"><span class="level-item"> </span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-07-06T08:39:47.642Z">2023-07-06</time></p><p class="title"><a href="/2023/07/06/2.%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-07-06T08:39:47.640Z">2023-07-06</time></p><p class="title"><a href="/2023/07/06/1.%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-07-06T08:39:47.638Z">2023-07-06</time></p><p class="title"><a href="/2023/07/06/12.%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-07-06T08:39:47.636Z">2023-07-06</time></p><p class="title"><a href="/2023/07/06/11.%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-07-06T08:39:47.634Z">2023-07-06</time></p><p class="title"><a href="/2023/07/06/10.%E5%89%8D%E7%AB%AF%E5%AE%A1%E6%89%B9/"> </a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/"><span class="level-start"><span class="level-item">2023</span></span><span class="level-end"><span class="level-item tag">16</span></span></a></li></ul></div></div></div><!--!--><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://moon-sea.oss-cn-shanghai.aliyuncs.com/blog_images/head.png" alt="beibei"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">beibei</p><p class="is-size-6 is-block">自信，向阳生长。</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>中国·江苏·无锡</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">16</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/zhengyaok" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/zhengyaok"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://gitee.com/Guoqing-Li" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Gitee(码云)</span></span><span class="level-right"><span class="level-item tag">gitee.com</span></span></a></li><li><a class="level is-mobile" href="https://blog.csdn.net/Brath?type=blog" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">CSDN</span></span><span class="level-right"><span class="level-item tag">blog.csdn.net</span></span></a></li><li><a class="level is-mobile" href="https://juejin.cn/user/settings/profile" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">掘金</span></span><span class="level-right"><span class="level-item tag">juejin.cn</span></span></a></li><li><a class="level is-mobile" href="https://oss.console.aliyun.com/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">AliCloud(阿里云)</span></span><span class="level-right"><span class="level-item tag">oss.console.aliyun.com</span></span></a></li><li><a class="level is-mobile" href="https://cloud.tencent.com/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">TencentCloud(腾讯云)</span></span><span class="level-right"><span class="level-item tag">cloud.tencent.com</span></span></a></li><li><a class="level is-mobile" href="https://www.zhipin.com/web/user/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">BOSS</span></span><span class="level-right"><span class="level-item tag">www.zhipin.com</span></span></a></li><li><a class="level is-mobile" href="https://www.bilibili.com/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bilibili(B站)</span></span><span class="level-right"><span class="level-item tag">www.bilibili.com</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="https://moon-sea.oss-cn-shanghai.aliyuncs.com/blog_images/head.png" alt="BeiBei-Blog" height="28"></a><p class="is-size-7"><span>&copy; 2023 John Doe</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p><p class="is-size-7">© 2030</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
