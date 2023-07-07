@@ -8,7 +8,9 @@
         <id>http://example.com/2023/07/06/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
         <title></title>
         <link rel="alternate" href="http://example.com/2023/07/06/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-        <content type="html">&lt;h1 id=&#34;云尚办公系统前端基础知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#云尚办公系统前端基础知识&#34;&gt;#&lt;/a&gt; 云尚办公系统：前端基础知识&lt;/h1&gt;
+        <content type="html">&lt;p&gt;date: 2023-07-06 11:23:03&lt;/p&gt;
+&lt;p&gt;title: 云尚办公系统：前段基础知识&lt;/p&gt;
+&lt;h1 id=&#34;云尚办公系统前端基础知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#云尚办公系统前端基础知识&#34;&gt;#&lt;/a&gt; 云尚办公系统：前端基础知识&lt;/h1&gt;
 &lt;h2 id=&#34;1-前端开发介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-前端开发介绍&#34;&gt;#&lt;/a&gt; 1、前端开发介绍&lt;/h2&gt;
 &lt;p&gt;前端工程师 “Front-End-Developer” 源自于美国。大约从 2005 年开始正式的前端工程师角色被行业所认可，到了 2010 年，互联网开始全面进入移动时代，前端开发的工作越来越重要。&lt;/p&gt;
 &lt;p&gt;最初所有的开发工作都是由后端工程师完成的，随着业务越来越繁杂，工作量变大，于是我们将项目中的可视化部分和一部分交互功能的开发工作剥离出来，形成了前端开发。&lt;/p&gt;
